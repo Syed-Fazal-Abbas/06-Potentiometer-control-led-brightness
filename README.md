@@ -24,7 +24,9 @@ values are also printed on the Serial Monitor for testing.
 
 ## Code
 
-​```cpp
+​## Code
+
+```cpp
 int potPin = A0; // Potentiometer pin
 int ledPin = 9;  // LED connected to PWM pin 9
 int potValue = 0;
