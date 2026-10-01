@@ -25,8 +25,8 @@ values are also printed on the Serial Monitor for testing.
 ## Code
 
 ​```cpp
-int potPin = A0;      // Potentiometer pin
-int ledPin = 9;       // LED connected to PWM pin 9
+int potPin = A0; // Potentiometer pin
+int ledPin = 9;  // LED connected to PWM pin 9
 int potValue = 0;
 int brightness = 0;
 
@@ -36,13 +36,13 @@ void setup() {
 }
 
 void loop() {
-  potValue = analogRead(potPin);               // Read pot value (0-1023)
+  potValue = analogRead(potPin); // Read pot value (0-1023)
   brightness = map(potValue, 0, 1023, 0, 255); // Scale to PWM range
-  analogWrite(ledPin, brightness);             // Set LED brightness
+  analogWrite(ledPin, brightness); // Set LED brightness
   Serial.println(brightness);
   delay(10);
 }
-​```
+```
 
 ## Demo Video
 [https://youtu.be/ix8-93fL72U?si=uep95bfFIuN8vleo]
